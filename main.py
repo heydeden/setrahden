@@ -158,11 +158,11 @@ if home==False and about==False or home==True and about==False:
 
 # about page
 if about==True and home==False:
-    url = 'https://www.kaggle.com/datasets/shrutipandit707/heartdisease'
-    n8 = 'https://lala09-erha.github.io/datamining/notebooks8.html'
-    n9 = 'https://lala09-erha.github.io/datamining/notebooks10.html'
-    s8 = 'https://lala09-erha.github.io/datamining/Salinan8.html'
-    s10 = 'https://lala09-erha.github.io/datamining/Salinan10.html'
+    url = 'https://www.kaggle.com/datasets/wenruliu/adult-income-dataset'
+    n8 = ''
+    n9 = ''
+    s8 = ''
+    s10 = ''
     st.markdown("<h2 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h2>", unsafe_allow_html=True)
     st.write('Sistem Prediksi Penyakit Jantung adalah sebuah sistem yang bertujuan untuk memprediksi penyakit jantung dini. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
     st.markdown("<h4 style='text-align: center; color: white; margin:0 ; padding:0;'>Dataset</h4>", unsafe_allow_html=True)
