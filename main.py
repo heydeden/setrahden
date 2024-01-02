@@ -59,9 +59,9 @@ if home==False and about==False or home==True and about==False:
     jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
     col3,col4 = st.columns(2)
     with col3:
-        bp = st.number_input("Tekanan Darah",min_value=0,max_value=1000)
+        bp = st.number_input("pendapatan di bawah 50k",min_value=0,max_value=1000)
     with col4:
-        chol = st.number_input("Kadar Kolesterol",min_value=0,max_value=1000)
+        chol = st.number_input("pendapatan di atas 50k",min_value=0,max_value=1000)
     #    Centering Butoon 
     columns = st.columns((2, 0.6, 2))
     sumbit = columns[1].button("Submit")
