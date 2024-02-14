@@ -1,3 +1,29 @@
+local passwords = {}
+response = gg.makeRequest('https://pastebin.com/raw/zt0BPnvM').content --Getting the Password from the URI
+for i in response:gmatch('[^\n% ]+') do
+  passwords[i] = true
+end
+ 
+local validate = false
+ 
+--Password Input
+local askPassword = gg.prompt({"Input key: "}, nil, {"text"})
+if not askPassword then
+  gg.alert("Password Empty")
+  os.exit()
+end
+for key, value in pairs(passwords) do
+  if askPassword[1] == key then
+    gg.alert("Key Validate!")
+    validate = true
+    break
+  end
+end
+if validate == false then 
+    gg.alert("Key Wrong!")
+    os.exit()
+end
+
 gg.setVisible(false)
 gg.alert("GM Team \n \nDMG = DAMAGE \nCT = COOLDOWN TIME \nS = SKILL \nA = ARTS \nTA =TRUE ARTS \nSA = SUPER ARTS")
 
