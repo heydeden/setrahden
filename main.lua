@@ -18,7 +18,7 @@ end
 
 
 function a1()
-API = gg.makeRequest('  https://pastebin.com/raw/37zNYyvt  ').content
+API = gg.makeRequest('https://raw.githubusercontent.com/heydeden/setrahden/main/free.lua').content
 if not API then
 gg.alert('⚠⚠You Are Offline⚠⚠️\nOR\n⚠⚠You Did not Give Internet access⚠⚠')
 noselect()
