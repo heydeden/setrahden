@@ -1,5 +1,5 @@
 local passwords = {}
-response = gg.makeRequest('https://pastebin.com/raw/zt0BPnvM').content --Getting the Password from the URI
+response = gg.makeRequest('https://raw.githubusercontent.com/heydeden/setrahden/main/password.txt').content --Getting the Password from the URI
 for i in response:gmatch('[^\n% ]+') do
   passwords[i] = true
 end
